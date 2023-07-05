@@ -6,6 +6,8 @@
     --body-color: #574e73;
 }
 
+/*Typography*/
+
 html {
     font-size: 62.5%;
 }
@@ -38,7 +40,9 @@ p {
     margin-top: 0;
 }
 
+
 @media screen and (min-width: 1024px) {
+
     body {
         font-size: 1.8rem;
     }
@@ -53,5 +57,34 @@ p {
 
     h3 {
         font-size: 2.4rem;
+    }
+}
+
+/* Link */
+
+a {
+    text-decoration: none;
+}
+
+.link-arrow {
+    color: var(--accent-color);
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.link-arrow::after {
+    content: '-->';
+    margin-left: 5px;
+    transition: margin 0.15s;
+}
+
+.link-arrow:hover::after {
+    margin-left: 10px;
+}
+
+@media screen and (min-width: 1024px) {
+    .link-arrow {
+        font-size: 1.5rem;
     }
 }
